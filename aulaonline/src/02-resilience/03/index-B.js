@@ -17,7 +17,7 @@ breaker.on("halfOpen", () => console.log(`HALF_OPEN: The breaker`));
 breaker.on("close", () => console.log(`CLOSE: The breaker`));
 
 breaker.fallback(() => {
-  console.log("Passou pelo Fallback");
+  console.log("called Fallback");
 });
 
 app.use(express.json());

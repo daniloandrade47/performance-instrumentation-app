@@ -20,7 +20,7 @@ app.get("/", (req, res) => {
     res.send("OK");
   } else {
     console.log("Erro na API A");
-    res.status(500).send("Algum problema encontrado!");
+    res.status(500).send("Algo está errado!");
   }
 
   res.send(url);
